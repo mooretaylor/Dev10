@@ -1,121 +1,185 @@
-<!DOCTYPE html>
+<article><!DOCTYPE html>
 
 <!--
   Name: Taylor Moore
   Date Created: 12.09.2018
-  Last Modified: 12.09.2018
+  Last Modified: 12.19.2018
 -->
 
 <html lang="en">
 
   <head>
     <title>Menu</title>
+
+    <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+
+    <style>
+
+    section {
+      text-align: center;
+    }
+
+    .column {
+      box-sizing: border-box;
+      float: left;
+      padding: 5px;
+      width: 33.33%;
+    }
+
+    .clear-float {
+      clear: both;
+    }
+
+    strong {
+      font-size: 1.1em;
+    }
+
+    table {
+      border: 1px solid #a9e5bb;;
+      border-collapse: collapse;
+      width: 40%;
+      margin: 10px auto 50px;
+    }
+
+    table, th, td {
+      padding: 5px;
+      color: black;
+    }
+
+    th {
+      font-size: 1.1em;
+      background-color: #a61108;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #a9e5bb;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #a61108;
+    }
+
+    tbody td:nth-child(even) {
+      text-align: right;
+    }
+
+    </style>
+
   </head>
 
   <body>
     <main>
       <header>
-        <center>
         <h1>Steve's Grill</h1>
-      </center>
       </header>
-      <hr />
+
       <nav>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="contact.html">Contact Us</a>
       </nav>
-      <hr />
+
       <section>
-        <p>
-        <table width="100%">
-          <tr>
-            <td>
-            <center>
-              <strong>Burger and Fries</strong><br />
-              An American Classic!<br />
-              Your choice - with or without cheese<br />
-              Pickle, onion, tomato, and lettuce<br />
-              Served with our famous thick cut<br />
-              french fries<br />
-              $7.95
-            </center>
-            </td>
-            <td>
-            <center>
-              <strong>Hot Dog and Chips</strong><br />
-              A Summer Classic!<br />
-              Your choice - white or wheat bun<br />
-              Relish, mustard, and ketchup<br />
-              Served with our house-made chips<br />
-              $7.95
-              <br /><br />
-            </center>
-            </td>
-            <td>
-            <center>
-              <strong>Italian Sausage and Peppers</strong><br />
-              An All-Time Favorite!<br />
-              Your choice - mild or spicy Cole Slaw<br />
-              Served with garlic mashers<br />
-              $10.95
-              <br /><br /><br />
-            </center>
-            </td>
-          </tr>
+        <div class="column">
+          <article>
+          <strong>Burger and Fries</strong><br />
+          An American Classic!<br />
+          Your choice - with or without cheese<br />
+          Pickle, onion, tomato, and lettuce<br />
+          Served with our famous thick cut<br />
+          french fries<br />
+          $7.95
+          </article>
+          <article>
+          <strong>Tenderloin Sandwich and Chips</strong><br />
+          Really Hits the Spot!<br />
+          Plain or Sesame Seed Bun<br />
+          Pickle, onion, tomato, and lettuce<br />
+          Served with our house-made chips<br />
+          $8.95
+        </article>
+      </div>
+      <div class="column">
+        <article>
+          <strong>Hot Dog and Chips</strong><br />
+          A Summer Classic!<br />
+          Your choice - white or wheat bun<br />
+          Relish, mustard, and ketchup<br />
+          Served with our house-made chips<br />
+          $7.95
+        </article>
+        <br />
+        <article>
+          <strong>House Salad</strong><br />
+          On the Lighter Side<br />
+          Your choice - with or without cheese<br />
+          Iceberg lettuce, tomatoes, peppers<br />
+          Thousand Island or Ranch<br />
+          Dressing Served with a dinner roll<br />
+          $6.95
+        </article>
+      </div>
+      <div class="column">
+        <article>
+          <strong>Italian Sausage and Peppers</strong><br />
+          An All-Time Favorite!<br />
+          Your choice - mild or spicy Cole Slaw<br />
+          Served with garlic mashers<br />
+          $10.95
+        </article>
+        <br /><br />
+        <article>
+          <strong>Brisket Sandwich and Fries</strong><br />
+          A Taste of Texas!<br />
+          Smoked Brisket on thick-cut<br />
+          Texas Toast<br />
+          Cole Slaw<br />
+          Served with our famous thick-cut<br />
+          french fries<br />
+          $7.95
+        </article>
+      </div>
+      <div class="clear-float"></div>
+      </section>
+
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">Beverages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">Root Beer</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td colspan="2">Bottled Water</td>
+              <td>$1.25</td>
+            </tr>
+            <tr>
+              <td colspan="2">Lemonade</td>
+              <td>$1.00</td>
+            </tr>
+            <tr>
+              <td colspan="2">Iced Tea</td>
+              <td>$1.25</td>
+            </tr>
+          </tbody>
         </table>
-      </p>
-      <p>
-      <table width="100%">
-          <tr>
-            <td>
-            <center>
-              <strong>Tenderloin Sandwich and Chips</strong><br />
-              Really Hits the Spot!<br />
-              Plain or Sesame Seed Bun<br />
-              Pickle, onion, tomato, and lettuce<br />
-              Served with our house-made chips<br />
-              $8.95
-              <br /><br /><br />
-            </center>
-            </td>
-            <td>
-            <center>
-              <strong>House Salad</strong><br />
-              On the Lighter Side<br />
-              Your choice - with or without cheese<br />
-              Iceberg lettuce, tomatoes, peppers<br />
-              Thousand Island or Ranch<br />
-              Dressing Served with a dinner roll<br />
-              $6.95
-              <br /><br />
-            </center>
-            </td>
-            <td>
-            <center>
-              <strong>Brisket Sandwich and Fries</strong><br />
-              A Taste of Texas!<br />
-              Smoked Brisket on thick-cut<br />
-              Texas Toast<br />
-              Cole Slaw<br />
-              Served with our famous thick-cut<br />
-              french fries<br />
-              $7.95
-            </center>
-            </td>
-          </tr>
-        </table>
+      </section>
+
+
       <footer>
-        <hr />
-        <center>
         <p>
           123 Eat Street, Chowtown, MN 55555
-        </P>
+        </p>
         <p>
           (555) 555-5555
         </p>
-      </center>
       </footer>
+
     </main>
   </body>
 
