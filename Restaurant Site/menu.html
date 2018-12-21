@@ -3,13 +3,19 @@
 <!--
   Name: Taylor Moore
   Date Created: 12.09.2018
-  Last Modified: 12.19.2018
+  Last Modified: 12.20.2018
 -->
 
 <html lang="en">
 
   <head>
-    <title>Menu</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
 
@@ -19,23 +25,12 @@
       text-align: center;
     }
 
-    .column {
-      box-sizing: border-box;
-      float: left;
-      padding: 5px;
-      width: 33.33%;
-    }
-
-    .clear-float {
-      clear: both;
-    }
-
     strong {
       font-size: 1.1em;
     }
 
     table {
-      border: 1px solid #a9e5bb;;
+      border: 1px solid #a9e5bb;
       border-collapse: collapse;
       width: 40%;
       margin: 10px auto 50px;
@@ -65,81 +60,81 @@
 
     </style>
 
+
+    <title>Menu</title>
+
   </head>
 
   <body>
-    <main>
+    <div class="container-fluid">
       <header>
-        <h1>Steve's Grill</h1>
+        <h1 class="display-1">Steve's Grill</h1>
       </header>
 
+      <noscript><div class="alert alert-dark" role="alert">This site is best viewed with Javascript enabled.</div></noscript>
+
       <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact Us</a>
+        <a class="btn badge-pill" href="index.html"><span class="oi oi-home" title="Home" aria-hidden="true"></span></a>
+        <a class="btn badge-pill" href="menu.html">Menu</a>
+        <a class="btn badge-pill" href="contact.html">Contact Us</a>
       </nav>
 
       <section>
-        <div class="column">
-          <article>
-          <strong>Burger and Fries</strong><br />
-          An American Classic!<br />
-          Your choice - with or without cheese<br />
-          Pickle, onion, tomato, and lettuce<br />
-          Served with our famous thick cut<br />
-          french fries<br />
-          $7.95
-          </article>
-          <article>
-          <strong>Tenderloin Sandwich and Chips</strong><br />
-          Really Hits the Spot!<br />
-          Plain or Sesame Seed Bun<br />
-          Pickle, onion, tomato, and lettuce<br />
-          Served with our house-made chips<br />
-          $8.95
-        </article>
-      </div>
-      <div class="column">
-        <article>
-          <strong>Hot Dog and Chips</strong><br />
-          A Summer Classic!<br />
-          Your choice - white or wheat bun<br />
-          Relish, mustard, and ketchup<br />
-          Served with our house-made chips<br />
-          $7.95
-        </article>
-        <br />
-        <article>
-          <strong>House Salad</strong><br />
-          On the Lighter Side<br />
-          Your choice - with or without cheese<br />
-          Iceberg lettuce, tomatoes, peppers<br />
-          Thousand Island or Ranch<br />
-          Dressing Served with a dinner roll<br />
-          $6.95
-        </article>
-      </div>
-      <div class="column">
-        <article>
-          <strong>Italian Sausage and Peppers</strong><br />
-          An All-Time Favorite!<br />
-          Your choice - mild or spicy Cole Slaw<br />
-          Served with garlic mashers<br />
-          $10.95
-        </article>
-        <br /><br />
-        <article>
-          <strong>Brisket Sandwich and Fries</strong><br />
-          A Taste of Texas!<br />
-          Smoked Brisket on thick-cut<br />
-          Texas Toast<br />
-          Cole Slaw<br />
-          Served with our famous thick-cut<br />
-          french fries<br />
-          $7.95
-        </article>
-      </div>
-      <div class="clear-float"></div>
+        <div class="row">
+          <div class="col">
+            <strong>Burger and Fries</strong><br />
+            An American Classic!<br />
+            Your choice - with or without cheese<br />
+            Pickle, onion, tomato, and lettuce<br />
+            Served with our famous thick cut<br />
+            french fries<br />
+            $7.95
+          </div>
+          <div class="col">
+            <strong>Hot Dog and Chips</strong><br />
+            A Summer Classic!<br />
+            Your choice - white or wheat bun<br />
+            Relish, mustard, and ketchup<br />
+            Served with our house-made chips<br />
+            $7.95
+          </div>
+          <div class="col">
+            <strong>Italian Sausage and Peppers</strong><br />
+            An All-Time Favorite!<br />
+            Your choice - mild or spicy Cole Slaw<br />
+            Served with garlic mashers<br />
+            $10.95
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <strong>Tenderloin Sandwich and Chips</strong><br />
+            Really Hits the Spot!<br />
+            Plain or Sesame Seed Bun<br />
+            Pickle, onion, tomato, and lettuce<br />
+            Served with our house-made chips<br />
+            $8.95
+          </div>
+          <div class="col">
+            <strong>House Salad</strong><br />
+            On the Lighter Side<br />
+            Your choice - with or without cheese<br />
+            Iceberg lettuce, tomatoes, peppers<br />
+            Thousand Island or Ranch<br />
+            Dressing Served with a dinner roll<br />
+            $6.95
+          </div>
+          <div class="col">
+            <strong>Brisket Sandwich and Fries</strong><br />
+            A Taste of Texas!<br />
+            Smoked Brisket on thick-cut<br />
+            Texas Toast<br />
+            Cole Slaw<br />
+            Served with our famous thick-cut<br />
+            french fries<br />
+            $7.95
+          </div>
+        </div>
       </section>
 
       <section>
@@ -180,7 +175,11 @@
         </p>
       </footer>
 
-    </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts/restaurantScripts.js"></script>
   </body>
 
 </html>

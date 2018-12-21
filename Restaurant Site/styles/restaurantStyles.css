@@ -1,7 +1,7 @@
 /*
 Creator: Taylor Moore
 Date created: 12.13.2018
-Date last modified: 12.19.2018
+Date last modified: 12.20.2018
 */
 
 body {
@@ -39,29 +39,44 @@ article {
 header {
   font-family: "Mexcellent W05 Regular";
   font-size: 2.7em;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
+}
+
+h1 {
+  font-family: "Mexcellent W05 Regular";
 }
 
 nav {
   background-color: #a9e5bb;
   padding: 10px;
   font-family: "Mexcellent W05 Regular";
+  color: #a61108;
 }
 
-nav a {
+nav .btn {
+  background-color: white;
   color: #a61108;
   padding: 5px 15px;
 }
 
-nav a:hover {
+nav .btn:hover {
   font-weight: bold;
+  color: inherit;
 }
 
-nav a:active {
+nav .btn:active {
   text-decoration: none;
   font-weight: normal;
 }
 
-nav a:visited {
+nav .btn:visited {
   color: #0c090d;
+}
+
+.jumbotron-fluid {
+  background-color: white;
+}
+
+.row {
+  padding: 5px;
 }
