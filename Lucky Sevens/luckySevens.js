@@ -17,19 +17,19 @@ function play() {
     } else {
       var rollCount = 0;
       var gameMoney = startBet;
-      var moneyTally = [startBet];
+      /*var moneyTally = [startBet];*/
       var moneyMax = [startBet];
-      var totalTally = [];
+      /*var totalTally = [];*/
       var rollNum = [0];
       while (gameMoney > 0) {
         var die1 = Math.floor( Math.random() * 6 ) +1;
         var die2 = Math.floor( Math.random() * 6 ) +1;
         var diceTotal = die1 + die2;
         rollCount++;
-        totalTally.push(diceTotal);
+        /*totalTally.push(diceTotal);*/
         if (diceTotal == 7) {
-            gameMoney += 4;
-            moneyTally.push(gameMoney);
+            gameMoney = gameMoney + 4;//works like a string equation for some reason, but only if the very first diceTotal equals 7 (even when written as "gameMoney += 4")
+            /*moneyTally.push(gameMoney);*/
             if (gameMoney > moneyMax){
               moneyMax.splice(0,1);
               moneyMax.push(gameMoney);
@@ -39,10 +39,10 @@ function play() {
             }
         }  else {
            gameMoney = gameMoney - 1;
-           moneyTally.push(gameMoney);
+           /*moneyTally.push(gameMoney);*/
            }
       }
-      alert ("Starting Bet: $" + startBet + "\n" + "\nList of Dice Totals: " + totalTally + "\n" +"\nTally Number: " + totalTally.length + "\n" + "\nTotal Rolls Before Going Broke: " + rollCount + "\n" + "\nMoney Tally: " + moneyTally + "\n" + "\nHighest Amount Won: $" + moneyMax + "\n" + "\nRoll Count at Highest Amount Won: " + rollNum)
+      /*alert ("Starting Bet: $" + startBet + "\n" + "\nList of Dice Totals: " + totalTally + "\n" +"\nTally Number: " + totalTally.length + "\n" + "\nTotal Rolls Before Going Broke: " + rollCount + "\n" + "\nMoney Tally: " + moneyTally + "\n" + "\nHighest Amount Won: $" + moneyMax + "\n" + "\nRoll Count at Highest Amount Won: " + rollNum)*/
 
       document.getElementById("results").style.display = "";
       document.getElementById("thisBet").innerText = "$" + startBet + ".00";
