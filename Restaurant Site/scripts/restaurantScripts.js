@@ -1,3 +1,10 @@
+/*
+Name: Taylor Moore
+Date Created: 12.20.2018
+Last Modified: 12.21.2018
+*/
+
+
 function validateForm() {
   var name = document.forms["myForm"]["name"].value;
   var email = document.forms["myForm"]["email"].value;

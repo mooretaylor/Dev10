@@ -1,3 +1,9 @@
+/*
+Name: Taylor Moore
+Date Created: 12.09.2018
+Last Modified: 12.21.2018
+*/
+
 function playAgain() {
     document.getElementById("results").style.display = "none";
     document.getElementById("thisBet").innerText = "";
